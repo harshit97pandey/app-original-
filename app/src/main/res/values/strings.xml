@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">BUS</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="latitude_label">Latitude</string>
+    <string name="longitude_label">Longitude</string>
+    <string name="spacet">\t\t\t\t\t\t\t\t\t\t\t\t\tArrival:\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  Departure:</string>
+
+    <string name="no_location_detected">
+        No location detected. Make sure location is enabled on the device.
+    </string>
+    <string name="title_activity_temp">Map</string>
+</resources>
+
+

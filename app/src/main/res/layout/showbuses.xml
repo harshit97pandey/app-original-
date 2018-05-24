@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cast_libraries_material_featurehighlight_outer_highlight_default_color">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:text="Buses On Chosen Route"
+        android:textColor="@color/cast_expanded_controller_text_color"
+        android:textSize="25sp"
+        android:id="@+id/head"
+        android:gravity="center"
+        style="@style/Base.ThemeOverlay.AppCompat.ActionBar"
+        android:textStyle="normal|bold"
+        android:background="@color/colorAccent" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:background="@color/cast_libraries_material_featurehighlight_outer_highlight_default_color">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:id="@+id/ll1"
+                >
+            </LinearLayout>
+
+        </ScrollView>
+
+
+
+
+
+
+
+</LinearLayout>

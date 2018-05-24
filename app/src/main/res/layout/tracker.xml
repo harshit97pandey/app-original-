@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="8"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="8"
+            android:layout_height="match_parent"
+            android:text="Bus On Route "
+            android:background="@color/colorPrimary"
+            android:textColor="@color/cast_expanded_controller_text_color"
+            android:textSize="@dimen/place_autocomplete_progress_size"
+            android:textStyle="normal|bold"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+    
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="From"
+            android:background="@color/cast_libraries_material_featurehighlight_text_body_color"
+            android:layout_margin="5dp"
+            android:textColor="@color/cast_expanded_controller_background_color"
+            android:textStyle="normal|bold" />
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/sp2"></Spinner>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="5dp">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="To"
+            android:background="@color/cast_libraries_material_featurehighlight_text_body_color"
+            android:layout_margin="5dp"
+            android:textColor="@color/cast_expanded_controller_background_color"
+            android:textStyle="normal|bold"
+            android:layout_marginBottom="5dp" />
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/sp3"></Spinner>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="15dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bus in next -"
+            android:textSize="18sp"
+            android:textStyle="normal|bold"
+            android:textColor="@color/cast_expanded_controller_background_color" />
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+       <RadioGroup
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal">
+           <RadioButton
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="5 mins"
+               android:onClick="RB"
+               android:id="@+id/rb1"/>
+           <RadioButton
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="10 mins"
+               android:onClick="RB"
+               android:id="@+id/rb2"/>
+           <RadioButton
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="30 mins"
+               android:onClick="RB"
+               android:id="@+id/rb3"/>
+           <RadioButton
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="1 hour"
+               android:onClick="RB"
+               android:id="@+id/rb4"/>
+           <RadioButton
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="2 hour"
+               android:onClick="RB"
+               android:id="@+id/rb5"/>
+           <RadioButton
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="All"
+               android:onClick="RB"
+               android:id="@+id/rb6"/>
+       </RadioGroup>
+        </HorizontalScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="100"
+        android:gravity="right"
+        >
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="40"
+            android:layout_height="wrap_content"
+            android:text="Show Buses"
+            android:onClick="showbusy"
+            android:background="@color/cast_expanded_controller_text_color"
+            android:textColor="@color/cast_expanded_controller_background_color"
+            android:textStyle="normal|bold"
+            
+             />
+
+
+    </LinearLayout>
+    
+    
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/cast_intro_overlay_background_color"></LinearLayout>
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content" 
+       android:text="Bus At Stop"
+       android:background="@color/colorPrimary"
+       android:textColor="@color/cast_expanded_controller_text_color"
+       android:textSize="@dimen/place_autocomplete_progress_size"
+       android:textStyle="normal|bold"
+       android:gravity="center"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stop"
+            android:background="@color/cast_libraries_material_featurehighlight_text_body_color"
+            android:layout_margin="5dp"
+            android:textColor="@color/cast_expanded_controller_background_color"
+            android:textStyle="normal|bold" />
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spfbs"></Spinner>
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bus in next -"
+            android:textSize="18sp"
+            android:textColor="@color/cast_expanded_controller_background_color"
+            android:textStyle="normal|bold" />
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp">
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5 mins"
+                    android:onClick="RBS"
+                    android:id="@+id/rbs1"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10 mins"
+                    android:onClick="RBS"
+                    android:id="@+id/rbs2"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="20 mins"
+                    android:onClick="RBS"
+                    android:id="@+id/rbs3"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="30 mins"
+                    android:onClick="RBS"
+                    android:id="@+id/rbs4"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1 hour"
+                    android:onClick="RBS"
+                    android:id="@+id/rbs5"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="All"
+                    android:onClick="RBS"
+                    android:id="@+id/rbs6"/>
+            </RadioGroup>
+        </HorizontalScrollView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100"
+            android:gravity="right"
+            >
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="40"
+                android:layout_height="wrap_content"
+                android:text="Show Buses"
+                android:onClick="showbusy2"
+                android:background="@color/cast_expanded_controller_text_color"
+                android:textColor="@color/cast_expanded_controller_background_color"
+                android:textStyle="normal|bold"
+
+                />
+
+
+        </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+    
+    //ShowOnMap
+    //route
+
+</LinearLayout>

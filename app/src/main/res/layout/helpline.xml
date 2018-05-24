@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cast_libraries_material_featurehighlight_outer_highlight_default_color">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Helpline Numbers "
+        android:background="@color/colorPrimary"
+        android:textColor="@color/cast_expanded_controller_text_color"
+        android:textSize="25dp"
+        android:textStyle="normal|bold"
+        android:gravity="center" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/cast_libraries_material_featurehighlight_outer_highlight_default_color">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/colorPrimaryDark"
+        android:layout_margin="10dp">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ambulance Service"
+            android:onClick="b1"
+            android:background="@color/cast_expanded_controller_text_color"
+            android:textStyle="normal|bold"
+            android:textSize="18sp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="2dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:id="@+id/b1l1"
+            android:orientation="vertical"
+            android:background="@color/cast_libraries_material_featurehighlight_outer_highlight_default_color"></LinearLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Police Hotline Numbers"
+            android:id="@+id/b3"
+            android:onClick="b3"
+            android:background="@color/cast_expanded_controller_text_color"
+            android:textStyle="normal|bold"
+            android:textSize="18sp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="2dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:id="@+id/b3l1"
+            android:orientation="vertical"
+            android:background="@color/cast_libraries_material_featurehighlight_outer_highlight_default_color"></LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fire Station"
+            android:id="@+id/b8"
+            android:onClick="b8"
+            android:background="@color/cast_expanded_controller_text_color"
+            android:textStyle="normal|bold"
+            android:textSize="18sp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="2dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:id="@+id/b8l1"
+            android:orientation="vertical"
+            android:background="@color/cast_libraries_material_featurehighlight_outer_highlight_default_color"></LinearLayout>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Blood Bank"
+            android:id="@+id/b2"
+            android:onClick="b2"
+            android:background="@color/cast_expanded_controller_text_color"
+            android:textStyle="normal|bold"
+            android:textSize="18sp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="2dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:id="@+id/b2l1"
+            android:orientation="vertical"
+            android:background="@color/cast_libraries_material_featurehighlight_outer_highlight_default_color"></LinearLayout>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="24 Hour Medical Stores"
+            android:id="@+id/b7"
+            android:onClick="b7"
+            android:background="@color/cast_expanded_controller_text_color"
+            android:textStyle="normal|bold"
+            android:textSize="18sp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="2dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:id="@+id/b7l1"
+            android:orientation="vertical"
+            android:background="@color/cast_libraries_material_featurehighlight_outer_highlight_default_color"></LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Airport Enquiry"
+            android:id="@+id/b4"
+            android:onClick="b4"
+            android:background="@color/cast_expanded_controller_text_color"
+            android:textStyle="normal|bold"
+            android:textSize="18sp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="2dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:id="@+id/b4l1"
+            android:orientation="vertical"
+            android:background="@color/cast_libraries_material_featurehighlight_outer_highlight_default_color"></LinearLayout>
+
+
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rail Enquiry"
+            android:id="@+id/b6"
+            android:onClick="b6"
+            android:background="@color/cast_expanded_controller_text_color"
+            android:textStyle="normal|bold"
+            android:textSize="18sp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="2dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:id="@+id/b6l1"
+            android:orientation="vertical"
+            android:background="@color/cast_libraries_material_featurehighlight_outer_highlight_default_color"></LinearLayout>
+
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tourism"
+            android:id="@+id/b9"
+            android:onClick="b9"
+            android:background="@color/cast_expanded_controller_text_color"
+            android:textStyle="normal|bold"
+            android:textSize="18sp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="2dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:id="@+id/b9l1"
+            android:orientation="vertical"
+            android:background="@color/cast_libraries_material_featurehighlight_outer_highlight_default_color"></LinearLayout>
+
+    </LinearLayout>
+    </ScrollView>
+
+
+
+
+</LinearLayout>

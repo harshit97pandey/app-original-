@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/ltv">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv1"
+        android:textStyle="normal|bold"
+        android:textColorLink="?attr/colorBackgroundFloating"
+        android:background="@color/colorAccent"
+        android:textSize="24sp"
+        android:textColor="@color/cast_expanded_controller_text_color" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/colorAccent">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/ll1"
+        android:background="@android:color/holo_blue_bright">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Stops"
+            android:textColorHighlight="@color/cast_expanded_controller_text_color"
+            android:textColor="@color/cast_expanded_controller_background_color"
+            android:textStyle="normal|bold"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="24sp" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical"
+        android:background="@color/cast_libraries_material_featurehighlight_outer_highlight_default_color">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Time Of Departure"
+            android:textStyle="normal|bold"
+            android:gravity="center"
+            android:textColor="@color/cast_expanded_controller_background_color"
+            android:textSize="24sp" />
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/ll2">
+
+
+            </LinearLayout>
+        </HorizontalScrollView>
+    </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:text="Show On Map"
+            android:onClick="showMap"
+            android:background="@color/cast_intro_overlay_button_background_color"
+            android:textStyle="normal|bold" />
+
+
+    </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ttvl"
+            android:text="Finding Bus Location......"
+            android:textSize="18sp"
+            android:background="@color/cast_expanded_controller_text_color"
+            android:textColor="@color/cast_expanded_controller_background_color" />
+    </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

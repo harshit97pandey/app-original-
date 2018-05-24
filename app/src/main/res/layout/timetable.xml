@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Time Table"
+        android:textSize="@dimen/cast_intro_overlay_focus_radius"
+        android:textStyle="normal|bold"
+        android:textColor="@color/cast_expanded_controller_text_color"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Choose Your Bus Stop"
+        android:textStyle="normal|bold"
+        android:textColor="@color/colorPrimaryDark"
+        android:background="@color/cast_expanded_controller_text_color"
+        android:gravity="left|center_vertical|center_horizontal" />
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sptime"></Spinner>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show Time Table"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/cast_expanded_controller_text_color"
+        android:textStyle="normal|bold"
+        android:onClick="showTable"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></ScrollView>
+
+</LinearLayout>
